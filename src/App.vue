@@ -1,6 +1,8 @@
 <template>
 <div id="app">
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <section class="section">
+    <h1 class="title">Amplify Sandbox</h1>
+  </section>
   <HelloWorld msg="Amplify Sandbox" />
 </div>
 </template>
@@ -15,3 +17,14 @@ export default {
   },
 };
 </script>
+
+<style>
+/* #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+} */
+</style>
