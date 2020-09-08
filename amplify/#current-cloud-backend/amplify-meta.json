@@ -1,0 +1,22 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-amplify-sandbox-develop-02328-authRole",
+            "UnauthRoleArn": "arn:aws:iam::865422985541:role/amplify-amplify-sandbox-develop-02328-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::865422985541:role/amplify-amplify-sandbox-develop-02328-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-amplify-sandbox-develop-02328-deployment",
+            "UnauthRoleName": "amplify-amplify-sandbox-develop-02328-unauthRole",
+            "StackName": "amplify-amplify-sandbox-develop-02328",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:865422985541:stack/amplify-amplify-sandbox-develop-02328/19158380-62e3-11ea-b369-06fa24220ee8",
+            "AmplifyAppId": "d12iphaeui25od"
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "type": "cicd",
+            "lastPushTimeStamp": "2020-03-10T15:24:02.420Z"
+        }
+    }
+}
