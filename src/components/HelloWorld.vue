@@ -1,47 +1,64 @@
 <template>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        using Bulma
-      </h1>
+<section class="section">
+  <div class="container">
+    <h1 class="title">using Bulma</h1>
 
-      <p class="subtitle">
-        Modern CSS framework based on
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
-          >Flexbox</a
-        >
-      </p>
+    <p class="subtitle">
+      Modern CSS framework based on
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
+    </p>
 
-      <div class="field">
-        <div class="control">
-          <input class="input" type="text" placeholder="Input" />
-        </div>
-      </div>
-
-      <div class="field">
-        <p class="control">
-          <span class="select">
-            <select>
-              <option>Select dropdown</option>
-            </select>
-          </span>
-        </p>
-      </div>
-
-      <div class="buttons">
-        <a class="button is-primary">Primary</a>
-        <a class="button is-link">Link</a>
+    <div class="field">
+      <div class="control">
+        <input class="input" type="text" placeholder="Input" />
       </div>
     </div>
-  </section>
+
+    <div class="field">
+      <div class="control">
+        <input class="input" type="date" placeholder="yyyy/mm/dd" />
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control has-icons-right">
+        <input class="input" type="email" placeholder="Email input" />
+        <span class="icon is-small is-right">
+          <i class="fas fa-exclamation-triangle"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea class="textarea" placeholder="Textarea"></textarea>
+      </div>
+    </div>
+
+    <div class="field">
+      <p class="control">
+        <span class="select">
+          <select>
+            <option>Select dropdown</option>
+          </select>
+        </span>
+      </p>
+    </div>
+
+    <div class="buttons">
+      <a class="button is-primary">Primary</a>
+      <a class="button is-link">Link</a>
+    </div>
+  </div>
+</section>
 </template>
 
 <script>
 export default {
   name: "HelloWorld",
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 };
 </script>
