@@ -2,7 +2,10 @@ import Vue from "vue";
 import App from "./App.vue";
 
 // amplify configure
-import { Amplify, Analytics } from "aws-amplify";
+import {
+  Amplify,
+  Analytics
+} from "aws-amplify";
 import awsconfig from "./aws-exports";
 Amplify.configure(awsconfig);
 

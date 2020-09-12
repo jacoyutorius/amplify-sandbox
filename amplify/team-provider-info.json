@@ -17,6 +17,9 @@
                     "appId": "d3845gofnvt06d",
                     "type": "cicd"
                 }
+            },
+            "auth": {
+                "cognito96dd9701": {}
             }
         }
     }
