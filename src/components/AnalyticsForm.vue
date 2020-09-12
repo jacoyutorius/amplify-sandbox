@@ -10,7 +10,7 @@
 
   <section>
     <h5>Logs</h5>
-    <textarea v-model="logs" id="" cols="30" rows="10"></textarea>
+    <textarea v-model="log" id="" cols="30" rows="10"></textarea>
   </section>
 </div>
 </template>
@@ -26,6 +26,11 @@ export default {
     return {
       logs: [],
     };
+  },
+  computed: {
+    log() {
+      return this.logs.join("\r\n");
+    },
   },
   methods: {
     async onClick(selection) {
