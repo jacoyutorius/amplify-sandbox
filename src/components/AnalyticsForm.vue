@@ -1,24 +1,25 @@
 <template>
-<div>
-  <section>
-    <div>
-      <h2>質問.1 きのこ派？たけのこ派？</h2>
-      <button @click="onClick('きのこの山')">きのこの山</button>
-      <button @click="onClick('たけのこの山')">たけのこの山</button>
-    </div>
-  </section>
+  <div>
+    <section>
+      <div>
+        <h2>質問.1 きのこ派？たけのこ派？</h2>
+        <button @click="onClick('きのこの山')">きのこの山</button>
+        <button @click="onClick('たけのこの山')">たけのこの山</button>
+      </div>
+    </section>
 
-  <section>
-    <h5>Logs</h5>
-    <textarea v-model="log" id="" cols="30" rows="10"></textarea>
-  </section>
-</div>
+    <section>
+      <h5>Logs</h5>
+      <textarea v-model="log" id="" cols="30" rows="10"></textarea>
+    </section>
+  </div>
 </template>
 
 <script>
-import {
-  Analytics
-} from "aws-amplify";
+// import {
+//   Analytics
+// } from "aws-amplify";
+import Analytics from "@aws-amplify/analytics";
 
 export default {
   name: "analytics",
