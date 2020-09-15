@@ -2,15 +2,15 @@ import Vue from "vue";
 import App from "./App.vue";
 
 // amplify configure
-import { Amplify, Analytics } from "aws-amplify";
+import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
 
-Amplify.Logger.LOG_LEVEL = "DEBUG";
+// Amplify.Logger.LOG_LEVEL = "DEBUG";
 
 console.log("awsconfig", awsconfig);
 Amplify.configure(awsconfig);
 
-Vue.use(Amplify, Analytics);
+Vue.use(Amplify);
 
 // https://qiita.com/akitsukada/items/6dff5a90d81765f83ab6#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%97%E3%83%AD%E3%83%90%E3%82%A4%E3%83%80%E3%83%BC%E3%81%AE%E4%BE%8B
 // Analytics.autoTrack("pageView", {

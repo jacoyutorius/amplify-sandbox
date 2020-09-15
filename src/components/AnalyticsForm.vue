@@ -16,10 +16,7 @@
 </template>
 
 <script>
-// import {
-//   Analytics
-// } from "aws-amplify";
-import Analytics from "@aws-amplify/analytics";
+import { Analytics } from "aws-amplify";
 
 export default {
   name: "analytics",
