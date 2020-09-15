@@ -1,9 +1,9 @@
 <template>
-<div id="app">
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Amplify Sandbox" />
-  <AnalyticsForm></AnalyticsForm>
-</div>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Amplify Sandbox" />
+    <AnalyticsForm></AnalyticsForm>
+  </div>
 </template>
 
 <script>

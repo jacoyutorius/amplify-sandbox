@@ -22,5 +22,29 @@
                 "cognito96dd9701": {}
             }
         }
+    },
+    "canary": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-amplifysandbox-canary-214821-authRole",
+            "UnauthRoleArn": "arn:aws:iam::865422985541:role/amplify-amplifysandbox-canary-214821-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::865422985541:role/amplify-amplifysandbox-canary-214821-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-amplifysandbox-canary-214821-deployment",
+            "UnauthRoleName": "amplify-amplifysandbox-canary-214821-unauthRole",
+            "StackName": "amplify-amplifysandbox-canary-214821",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:865422985541:stack/amplify-amplifysandbox-canary-214821/bf0d8f50-f751-11ea-bfe3-0e69877d8974",
+            "AmplifyAppId": "d3845gofnvt06d"
+        },
+        "categories": {
+            "auth": {
+                "cognito96dd9701": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3845gofnvt06d",
+                    "type": "cicd"
+                }
+            }
+        }
     }
 }
