@@ -5,7 +5,7 @@ import App from "./App.vue";
 import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
 
-// Amplify.Logger.LOG_LEVEL = "DEBUG";
+Amplify.Logger.LOG_LEVEL = "DEBUG";
 
 console.log("awsconfig", awsconfig);
 Amplify.configure(awsconfig);
