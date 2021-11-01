@@ -2,6 +2,8 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Amplify Sandbox" />
+
+    <button class="button" @click="onClick">LOG</button>
   </div>
 </template>
 
@@ -9,7 +11,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 
 // TODO: envによってログレベルを変えたほうが良い
-window.LOG_LEVEL = "VERBOSE";
+// window.LOG_LEVEL = "VERBOSE";
 
 export default {
   name: "App",
@@ -23,5 +25,10 @@ export default {
       this.$logger.error(e);
     }
   },
+  methods: {
+    onClick() {
+      this.$logger.info("clicked!!");
+    }
+  }
 };
 </script>

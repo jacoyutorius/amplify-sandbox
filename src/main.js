@@ -17,7 +17,7 @@ amplifyLogger.addPluggable(new AWSCloudWatchProvider());
 
 Vue.prototype.$logger = amplifyLogger;
 
-Amplify.Logger.LOG_LEVEL = "DEBUG";
+// Amplify.Logger.LOG_LEVEL = "DEBUG";
 
 console.log("awsconfig", awsconfig);
 Amplify.configure(awsconfig);
