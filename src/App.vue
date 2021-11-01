@@ -2,19 +2,26 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Amplify Sandbox" />
-    <AnalyticsForm></AnalyticsForm>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import AnalyticsForm from "./components/AnalyticsForm";
+
+// TODO: envによってログレベルを変えたほうが良い
+window.LOG_LEVEL = "VERBOSE";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
-    AnalyticsForm,
+  },
+  created: async function () {
+    try {
+      this.$logger.info("created");
+    } catch (e) {
+      this.$logger.error(e);
+    }
   },
 };
 </script>
