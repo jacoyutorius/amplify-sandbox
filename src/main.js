@@ -1,7 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
-import { Amplify, Logger, AWSCloudWatchProvider } from 'aws-amplify';
+import { Amplify, Logger, AWSCloudWatchProvider, Auth } from 'aws-amplify'; // eslint-disable-line no-unused-vars
 import awsconfig from './aws-exports';
+
+console.log({Auth});
 
 Amplify.configure({
   Logging: {
