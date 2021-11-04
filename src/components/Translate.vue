@@ -3,6 +3,10 @@
     <form>
       <label>Translate Text</label>
       <textarea v-model="sourceText"></textarea>
+
+      <label>Result Text</label>
+      <textarea v-model="resultText"></textarea>
+
       <button @click="onClick">Translate!</button>
     </form>
   </div>
@@ -16,6 +20,7 @@ export default {
   data() {
     return {
       sourceText: "",
+      resultText: "",
     };
   },
   methods: {
@@ -29,6 +34,8 @@ export default {
           },
         },
       });
+
+      this.resultText = result.text;
 
       const log = {
         sourceText: this.sourceText,
