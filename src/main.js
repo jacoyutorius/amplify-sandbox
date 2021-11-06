@@ -1,6 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import { Amplify, Logger, AWSCloudWatchProvider, Auth } from 'aws-amplify'; // eslint-disable-line no-unused-vars
+import { AmazonAIPredictionsProvider } from '@aws-amplify/predictions';
 import awsconfig from './aws-exports';
 
 console.log({Auth});
@@ -12,6 +13,8 @@ Amplify.configure({
   },
   ...awsconfig
 });
+
+Amplify.addPluggable(new AmazonAIPredictionsProvider());
 
 const amplifyLogger = new Logger("amplify-sandbox", "INFO");
 Amplify.register(amplifyLogger);
@@ -25,7 +28,6 @@ console.log("awsconfig", awsconfig);
 Amplify.configure(awsconfig);
 
 Vue.use(Amplify);
-
 
 Vue.config.productionTip = false;
 
