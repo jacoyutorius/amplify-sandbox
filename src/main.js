@@ -15,7 +15,7 @@ Amplify.configure({
 Amplify.addPluggable(new AmazonAIPredictionsProvider());
 
 const amplifyLogger = new Logger("amplify-sandbox", "INFO");
-// Amplify.register(amplifyLogger);
+Amplify.register(amplifyLogger);
 // amplifyLogger.addPluggable(new AWSCloudWatchProvider());
 
 Vue.prototype.$logger = amplifyLogger;
