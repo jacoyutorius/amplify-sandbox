@@ -1,0 +1,8 @@
+type Todo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  user: String
+  contents: String
+  expired_at: AWSDateTime
+  email: AWSEmail
+  url: AWSURL
+}
